@@ -7,18 +7,21 @@ return {
       { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
       { "nvim-telescope/telescope.nvim" }, -- Use telescope for help actions
     },
+    model = "gpt-4o",
     opts = {
-      debug = true, -- Enable debugging
-      show_help = true, -- Show help actions
+      -- debug = true, -- Enable debugging
+      -- show_help = true, -- Show help actions
       window = {
-        layout = "float",
+        layout = "vertical",
         -- my additions lol
         -- relative = "cursor",
-        width = 140,
+        width = 90,
         height = 45,
         row = 2,
+        border = "double",
+        title = "Copilot Chat 🤖",
       },
-      auto_follow_cursor = false, -- Don't follow the cursor after getting response
+      auto_follow_cursor = true, -- Don't follow the cursor after getting response
     },
     config = function(_, opts)
       local chat = require("CopilotChat")

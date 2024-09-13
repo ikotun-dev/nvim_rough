@@ -10,6 +10,9 @@ vim.keymap.set("i", "<C-j>", 'copilot#Accept("\\<CR>")', {
 
 vim.g.copilot_no_tab_map = true
 
+-- for GRUG
+vim.api.nvim_set_keymap("n", "<G>", ":YourCommandHe", { noremap = true })
+
 -- Set encoding to UTF-8
 
 -- Set encoding to UTF-8
