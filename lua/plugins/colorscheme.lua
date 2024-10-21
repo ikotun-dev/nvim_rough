@@ -26,6 +26,7 @@ return {
   -- {
   --   "gmr458/vscode_modern_theme.nvim",
   -- },
+  { "mellow-theme/mellow.nvim" },
   { "Shatur/neovim-ayu" },
   -- { "sainnhe/sonokai" },
   -- { "sainnhe/everforest" },
@@ -56,7 +57,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox-material",
+      colorscheme = "kanagawa",
       -- colorscheme = "catppuccin",
     },
   },

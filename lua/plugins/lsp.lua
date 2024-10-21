@@ -6,6 +6,9 @@ return {
     "williamboman/mason.nvim",
     "nvimtools/none-ls.nvim",
     "neovim/nvim-lspconfig",
+    {
+      "akinsho/toggleterm.nvim",
+    },
   },
   config = function()
     local null_ls = require("null-ls")
@@ -17,6 +20,7 @@ return {
     null_ls.setup({
       sources = {
         null_ls.builtins.formatting.black,
+        require("typescript.extensions.null-ls.code-actions"),
       },
     })
 
