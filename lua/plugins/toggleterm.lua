@@ -8,13 +8,13 @@ return {
     opts = {
       open_mapping = [[<C-t>]],
       direction = "vertical",
+      size = 100,
       shade_filetypes = {},
       hide_numbers = true,
       insert_mappings = true,
       terminal_mappings = true,
       start_in_insert = true,
       close_on_exit = true,
-      width = 80,
     },
   },
 }
