@@ -5,6 +5,7 @@ return {
     cmd = "ToggleTerm",
     build = ":ToggleTerm",
     keys = { { "<C-t>", "<cmd>ToggleTerm<cr>", desc = "Toggle floating terminal" } },
+
     opts = {
       open_mapping = [[<C-t>]],
       direction = "vertical",

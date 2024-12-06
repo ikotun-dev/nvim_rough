@@ -1,7 +1,17 @@
 return {
-  { "ellisonleao/gruvbox.nvim" },
+  -- { "ellisonleao/gruvbox.nvim" },
+  {
+    "ellisonleao/gruvbox.nvim",
+    priority = 1000,
+    config = true,
+    opts = {
+      contrast = "hard",
+    },
+  },
+  { "lamartire/hg.vim" },
   -- { "dracula/vim" },
   -- { "EdenEast/nightfox.nvim" },
+  { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
   { "rebelot/kanagawa.nvim" },
   { "olimorris/onedarkpro.nvim" },
   -- { "luisiacc/gruvbox-baby" },
@@ -26,12 +36,25 @@ return {
   -- {
   --   "gmr458/vscode_modern_theme.nvim",
   -- },
+  { "projekt0n/github-nvim-theme" },
   { "mellow-theme/mellow.nvim" },
   { "Shatur/neovim-ayu" },
   -- { "sainnhe/sonokai" },
   -- { "sainnhe/everforest" },
   -- { "sainnhe/edge" },
-  { "sainnhe/gruvbox-material" },
+  {
+    -- {
+    --   "sainnhe/gruvbox-material",
+    --   config = function()
+    --     -- Set the background options
+    --     vim.o.background = "dark" -- Ensure Neovim background is dark
+    --     vim.g.gruvbox_material_background = "dark"
+    --
+    --     -- Enable the colorscheme
+    --     vim.cmd.colorscheme("gruvbox-material")
+    --   end,
+    -- },
+  },
   -- { "sainnhe/forest-night" },
   -- { "sainnhe/edge" },
   { "ayu-theme/ayu-vim" },
@@ -57,7 +80,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "gruvbox",
       -- colorscheme = "catppuccin",
     },
   },

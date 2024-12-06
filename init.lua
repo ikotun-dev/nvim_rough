@@ -14,6 +14,8 @@ vim.g.copilot_no_tab_map = true
 vim.api.nvim_set_keymap("n", "<G>", ":YourCommandHe", { noremap = true })
 
 -- Set encoding to UTF-8
+vim.o.background = "dark" -- or "light" for light mode
+vim.cmd([[colorscheme gruvbox]])
 
 -- Set encoding to UTF-8
 -- vim.o.encoding = "utf-8"
