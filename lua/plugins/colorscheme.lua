@@ -8,6 +8,7 @@ return {
       contrast = "hard",
     },
   },
+  { "rose-pine/neovim", name = "rose-pine" },
   { "lamartire/hg.vim" },
   -- { "dracula/vim" },
   -- { "EdenEast/nightfox.nvim" },
@@ -80,6 +81,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
+      -- colorscheme = "ayu-dark",
       colorscheme = "gruvbox",
       -- colorscheme = "catppuccin",
     },

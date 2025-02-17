@@ -9,7 +9,7 @@ return {
     opts = {
       open_mapping = [[<C-t>]],
       direction = "vertical",
-      size = 100,
+      size = 80,
       shade_filetypes = {},
       hide_numbers = true,
       insert_mappings = true,
